@@ -1,0 +1,71 @@
+/* ===== Part 1: CSS Transitions and Keyframes ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Button Hover Effect */
+.fancy-btn {
+  padding: 0.8rem 1.5rem;
+  background: #6200ea;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.fancy-btn:hover {
+  transform: scale(1.1);
+  background: #3700b3;
+}
+
+/* Continuous Pulse Animation */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+  background: #ff6f61;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* ===== Part 3: Elements Triggered by JS ===== */
+#move-box {
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+  background: #03a9f4;
+  border-radius: 12px;
+  transition: transform 1s ease;
+}
+
+/* Popup animation classes */
+#popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#popup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hidden {
+  display: none;
+}

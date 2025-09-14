@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive CSS & JS Demo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1> CSS & JavaScript Animation Demo</h1>
+  </header>
+
+  <!-- Part 1: CSS Transitions/Animations -->
+  <section id="css-demo">
+    <button class="fancy-btn">Hover Me!</button>
+    <div class="animated-box">Watch Me Pulse</div>
+  </section>
+
+  <!-- Part 2 & 3: JavaScript Controlled Animation -->
+  <section id="js-demo">
+    <button id="move-btn">▶ Animate Box</button>
+    <div id="move-box"></div>
+
+    <button id="popup-btn">Show Popup</button>
+    <div id="popup" class="hidden">
+      <p>This popup slides and fades in!</p>
+      <button id="close-popup">Close</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
